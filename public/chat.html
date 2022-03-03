@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-light">
+    <div class="p-5">
+        <div class="container">
+            <div class="card">
+                <div
+                    class=" d-flex justify-content-between align-items-center card-header bg-success text-light bg-gradient">
+                    <span><i class="bi bi-gear-wide-connected"></i> &nbsp; chat room</span>
+                    <a href="./index.html" class="btn text-light">leave room &nbsp;<i
+                            class="bi bi-x-square-fill"></i></a>
+                </div>
+
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 panel-container">
+                            <ul class="list-group list-group-flush" id="room_list">
+                                <li class="list-group-item">
+                                    <i class="bi bi-door-open-fill"></i> &nbsp; <b>Rooms</b>
+                                </li>
+                                <!-- <li class="list-group-item">xpd</li> -->
+                            </ul>
+                            <ul class="list-group list-group-flush" id="users_list">
+                                <li class="list-group-item">
+                                    <i class="bi bi-person-lines-fill"></i> &nbsp; <b>Users</b>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12  col-md-8 right-panel" style="height: 500px; overflow-y: scroll" id="chat_body">
+                            <div class="container  message-container"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <form id="chart_form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="please enter message" id="msg">
+                            <button class="btn btn-success">send
+                                <i class="bi bi-send-fill"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="socket.io/socket.io.js"></script> <!-- 导入http://127.0.0.1:8086/socket.io/socket.io.js里的js -->
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-light">
+    <div class="p-5">
+        <div class="d-flex justify-content-center">
+            <div class="card join-room">
+                <div class="card-header bg-success text-center text-light fs-4 bg-gradient">
+                    <i class="bi bi-chat-dots-fill"></i>
+                    <span>chat</span>
+                </div>
+
+                <form action="./chat.html">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="input_name" class="form-label">name</label>
+                            <input type="text" name="name" id="input_name" class="form-control"
+                                placeholder="please enter name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="room_choice">room</label>
+                            <select name="room" id="room_choice" class="form-control">
+                                <option value="javascript">javascript</option>
+                                <option value="nodejs">nodejs</option>
+                                <option value="python">python</option>
+                            </select>
+                        </div>
+
+                        <button class="btn btn-success w-100 fs-5">join</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

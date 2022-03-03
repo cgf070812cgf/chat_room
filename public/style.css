@@ -1,0 +1,16 @@
+@media(min-width:768px){
+    .join-room{
+        width: 50%;
+    }
+    .panel-container{
+        border-right: 1px solid #DEDFDF;
+    }
+}
+@media(max-width:768px){
+    .join-room{
+        width: 100%;
+    }
+    .panel-container{
+        border-bottom: 1px solid #DEDFDF;
+    }
+}
